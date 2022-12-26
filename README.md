@@ -423,12 +423,11 @@ public class SinhVienController {
 1: controller
 
 ```
-   @PutMapping("/editSinhVien/updateSinhVien")
-    public String updateSinhVien( @ModelAttribute("updateSinhVien") SinhVien sinhVien){
+     @PostMapping("/editSinhVien/updateSinhVien")
+    public String updateSinhVien( @ModelAttribute("sinhVien") SinhVien sinhVien){
         sinhVienService.update( sinhVien);
         return "redirect:/view";
     }
-    
     @GetMapping("/editSinhVien/{id}")
     public String  viewUpdateSinhVien(@PathVariable("id") Long id, Model model)
     {
@@ -457,7 +456,7 @@ public class SinhVienController {
 <div class="container mt-3">
 
     <h1>Edit Sinh Vien Form</h1>
-    <form action="updateSinhVien" method="put">
+    <form action="updateSinhVien" method="POST" modelAttribute="sinhVien">
 
         <div class="row">
             <div class="col">
@@ -502,3 +501,8 @@ public class SinhVienController {
     }
 
 ```
+
+# kết luận 
+Trong bài viết này, chúng ta đã học cách CRUD 1 project 1 bảng mysql  spring boot vs jsp</h2>
+
+tất cả các mẫu mã hiển thị trong bài viết đều có sẵn [trên github](https://github.com/thangdtph27626/unitTest.github.io)
