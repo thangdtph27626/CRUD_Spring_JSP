@@ -505,4 +505,4 @@ public class SinhVienController {
 # kết luận 
 Trong bài viết này, chúng ta đã học cách CRUD 1 project 1 bảng mysql  spring boot vs jsp</h2>
 
-tất cả các mẫu mã hiển thị trong bài viết đều có sẵn [trên github](https://github.com/thangdtph27626/unitTest.github.io)
+tất cả các mẫu mã hiển thị trong bài viết đều có sẵn [trên github](https://github.com/thangdtph27626/CRUD_Spring_JSP.github.io)
